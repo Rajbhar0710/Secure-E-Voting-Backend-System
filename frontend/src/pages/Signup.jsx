@@ -99,6 +99,18 @@ export default function Signup() {
             />
           </div>
           <div>
+            <label className="text-sm font-medium text-slate-700">User Role</label>
+            <select
+              name="role"
+              value={form.role}
+              onChange={handleChange}
+              className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+            >
+              <option value="voter">Voter</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div>
             <label className="text-sm font-medium text-slate-700">Password</label>
             <input
               name="password"
